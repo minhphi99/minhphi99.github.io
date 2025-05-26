@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(assets/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.15), rbg(255, 255, 255, 0.75))
+}
+
+/* INPUT-SEARCH */
+.input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255, 0.75);
+    background: rgb(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.search-btn {
+
+    border-radius: 99%;
+}
+
+/* LOCATION-DATE */
+/* WEATHER-TEMP */
+/* HUMID - WIND */
+/* FORECAST */
