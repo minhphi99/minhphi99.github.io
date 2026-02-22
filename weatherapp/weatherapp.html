@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="weatherapp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <main class="container">
+        <div class="input-container">
+            <input class="input" type="text" placeholder="Enter your city" id="input">
+            <button class="search-btn" type="button" id="search-btn"><span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </div>
+        <div class="error" id="error"></div>
+
+        <section class="weather-info">
+            <div class="location-date">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="location-txt" id="location">Ha Noi</h4>
+                </div>
+                <h5 class="date-txt" id="date">26/5/2025</h5>
+            </div>
+
+            <div class="icon-temp">
+                <div class="weather-icon">
+                    <img src="assets/weather/clouds.svg">
+                </div>
+                <div class="temp-condition">
+                    <span class="temp" id="temp">30°C</span>
+                    <h4 class="condition" id="condition">clouds</h4>
+                </div>
+            </div>
+            <div class="humid-wind">
+                <div class="humid-wind-group">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div>
+                        <h4 class="cond-text" id="humid">Humidity</h4>
+                        <h4 class="cond-value" id="humid-value">74%</h4>
+                    </div>
+                </div>
+                <div class="humid-wind-group">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div>
+                        <h4 class="cond-text" id="wind">Wind speed</h4>
+                        <h4 class="cond-value" id="wind-value">4.2m/s</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast">
+                <div class="forecast-item">
+                    <h5 class="forecast-date" id="dis-date">26/5</h5>
+                    <img src="assets/weather/rain.svg" class="forecast-item-img">
+                    <h5 class="forecast-temp" id="dis-temp">30°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date" id="dis-date">26/5</h5>
+                    <img src="assets/weather/rain.svg" class="forecast-item-img">
+                    <h5 class="forecast-temp" id="dis-temp">30°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date" id="dis-date">26/5</h5>
+                    <img src="assets/weather/rain.svg" class="forecast-item-img">
+                    <h5 class="forecast-temp" id="dis-temp">30°C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-date" id="dis-date">26/5</h5>
+                    <img src="assets/weather/rain.svg" class="forecast-item-img">
+                    <h5 class="forecast-temp" id="dis-temp">30°C</h5>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="weatherapp.js"></script>
+</body>
+
+</html>
